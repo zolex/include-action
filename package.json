@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint index.js",
     "package": "ncc build index.js",
-    "process-includes": "node includes.js"
+    "process-includes": "node index.js"
   },
   "repository": {
     "type": "git",
