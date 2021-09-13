@@ -1,5 +1,8 @@
 name: 'Include Action'
 description: 'Include snippets using c-style'
+branding:
+  color: blue
+  icon: hash
 inputs:
   input:
     description: 'The input file to process'
