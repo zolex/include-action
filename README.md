@@ -33,7 +33,8 @@ RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS \
 RUN apk add --no-cache make
 ```
 
-## Example usage:
+
+## Action usage
 
 ```
 - name: Build Dockerfile
@@ -64,3 +65,7 @@ RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS \
     && docker-php-ext-enable opcache \
     && apk del .build-deps
 ```
+
+## Commandline usage
+
+`npm run process-includes php73cli.Dockerfile Dockerfile.out`

@@ -5,10 +5,9 @@
   "description": "GitHub Action to include snippets in c-style",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
     "lint": "eslint index.js",
     "package": "ncc build index.js",
-    "package:watch": "ncc build index.js --watch"
+    "process-includes": "node includes.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,8 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "fs": "0.0.1-security",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "process": "^0.11.10"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.3",
