@@ -1,0 +1,12 @@
+name: 'Include Action'
+description: 'Include snippets using c-style'
+inputs:
+  input:
+    description: 'The input file to process'
+    required: true
+  output:
+    description: 'The file to write the output to'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
