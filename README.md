@@ -37,7 +37,7 @@ RUN apk add --no-cache make
 
 ```
 - name: Build Dockerfile
-  uses: zolex/include-action@master
+  uses: zolex/include-action@v1
   with:
     input: php73cli.Dockerfile
     output: php73cli.Dockerfile.out
