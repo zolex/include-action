@@ -5,6 +5,9 @@ const core = require('@actions/core');
 const processIncludes = fileName => {
     try {
         const currentPath = path.dirname(fileName);
+        core.info("current path: " + currentPath);
+        core.info("read file: " + fileName);
+
         const fileContent = fs.readFileSync(fileName, 'utf8');
 
         return fileContent.replace(/^#include "([^"]+)"/m, (match, includeFile) => {
