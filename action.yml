@@ -10,6 +10,9 @@ inputs:
   output:
     description: 'The file to write the output to'
     required: true
+outputs:
+  dockerfile:
+    description: 'The generated Dockerfile contents'
 runs:
   using: 'node12'
   main: 'index.js'

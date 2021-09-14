@@ -27,6 +27,7 @@ try {
     }
 
     core.info(processedContent);
+    core.setOutput('dockerfile', processedContent);
 } catch (err) {
     core.error(err);
     process.exit(1);
