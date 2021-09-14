@@ -13,6 +13,10 @@ inputs:
 outputs:
   dockerfile:
     description: 'The generated Dockerfile contents'
+  conclusion:
+    description: 'Job conclusion'
+  error:
+    description: 'Error message'
 runs:
   using: 'node12'
   main: 'index.js'
